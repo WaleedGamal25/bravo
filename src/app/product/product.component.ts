@@ -11,16 +11,18 @@ export class ProductComponent implements OnInit {
   productDetails:any = {};
   AllComments = [];
   ind;
+
+
+
   constructor(_ActivatedRoute:ActivatedRoute,public _ProductsService:ProductsService) {
     this.ind = _ActivatedRoute.snapshot.paramMap.get("id");
 
 
-    this._ProductsService.getAllComments().subscribe( (da) => {
+    this._ProductsService.getAllComments(this.ind).subscribe( (da) => {
 
-      this.AllComments = da;
+      this.AllComments = da ;
 
      } )
-
    }
 
   ngOnInit(): void {
@@ -32,4 +34,6 @@ export class ProductComponent implements OnInit {
      } )
   }
 
+
 }
+

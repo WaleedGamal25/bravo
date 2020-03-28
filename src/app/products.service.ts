@@ -14,14 +14,14 @@ export class ProductsService {
  getAllPosts():Observable<any>
  {
    return this._HttpClient.get("https://jsonplaceholder.typicode.com/posts")
-
  }
 
- getAllComments():Observable<any>
+ getAllComments(id):Observable<any>
  {
-
-   return this._HttpClient.get("https://jsonplaceholder.typicode.com/posts/1/comments")
-
+   return this._HttpClient.get('https://jsonplaceholder.typicode.com/posts/'+`${id}`+'/comments')
  }
+
+
+
 
 }
