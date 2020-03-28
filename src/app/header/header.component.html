@@ -1,0 +1,88 @@
+<header>
+<div class="overlay">
+  <div class="container">
+    <ul class="head-list text-white text-white m-0">
+      <li class="list-inline-item"><a>Trustees</a></li>
+      <li class="list-inline-item"><a>FAQ</a></li>
+      <li class="list-inline-item"><i class="fa fa-phone"></i><span>012345678</span></li>
+      <li class="list-inline-item"><a>عربي</a></li>
+      <li class="list-inline-item bg-1"><a>Knowledge Center</a></li>
+      <li class="list-inline-item bg-2"><a>E-Services</a></li>
+    </ul>
+  </div>
+
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg">
+<div class="container">
+  <!-- Navbar brand -->
+  <a class="navbar-brand" href="#">
+    <img src="assets/images/component (1).png" class="img-fluid">
+  </a>
+
+  <!-- Collapse button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="basicExampleNav">
+
+    <!-- Links -->
+    <ul class="navbar-nav m-auto text-white ">
+      <li class="nav-item active">
+        <a class="nav-link text-white" routerLinkActive="active" routerLink="home">Home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" routerLink="product">Product</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#">Pricing</a>
+      </li>
+
+      <!-- Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">Dropdown</a>
+        <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+
+    </ul>
+    <!-- Links -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <!-- Use any element to open the sidenav -->
+    <span class="text-white" (click)="openNav()"><i class="fa fa-bars"></i></span>
+    <form class="form-inline waves-light" mdbWavesEffect>
+      <div class="md-form my-0">
+        <input placeholder='Search...' class='js-search' type="text">
+        <i class="fa fa-search"></i>
+      </div>
+    </form>
+  </div>
+  <!-- Collapsible content -->
+</div>
+</nav>
+<!--/.Navbar-->
+<div class="container">
+  <hr>
+</div>
+</div>
+</header>
+
+
+
+
+

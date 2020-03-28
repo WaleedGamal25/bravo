@@ -1,0 +1,163 @@
+header
+{
+    background-image: url(/assets/images/component.png);
+    background-position: center center;
+    background-repeat: no-repeat;;
+    background-size:cover;
+    width:100%;
+
+    .overlay
+    {
+      background:rgba(0,0,0,0.7);
+      width:100%;
+      height:100%;
+      padding-bottom:40px;
+    }
+
+    hr
+    {
+      border: 0.5px solid #aaaaaa6b;
+      margin: 0;
+    }
+}
+
+header
+{
+.head-list
+{
+  background:rgba(160, 158, 158, 0.2);
+  text-align: right;
+  border-bottom: 1px solid #aaaaaa6b;
+
+ li
+ {
+   padding:10px 15px;
+   margin:0
+ }
+
+ .bg-2
+ {
+   background-color:#14A99B
+ }
+
+ .bg-1
+ {
+   background-color:#052A48
+ }
+
+ .fa-phone
+ {
+   margin-right:5px
+ }
+
+}
+
+
+
+
+}
+
+.navbar input[type=text]{
+position: relative;
+padding: 15px 40px 15px 20px;
+width: 0px;
+color: #fff;
+text-transform: uppercase;
+font-size: 16px;
+font-weight: 100;
+letter-spacing: 2px;
+border: none;
+border-radius: 5px;
+background: linear-gradient(to right, #FFFFFF 0%,#464747 #F9F9F9 100%);
+transition: width 0.4s ease;
+outline: none;
+border-bottom:none !important;
+
+
+&:hover,
+&:focus
+{ width: 150px;}
+}
+
+.fa-search{
+position: relative;
+left: -37px;
+color: white;
+cursor:pointer
+}
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: white;
+}
+
+.navbar.navbar-dark form .md-form input
+{
+  border-bottom:none !important
+}
+
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #101625; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  z-index:55;
+
+/* The navigation menu links */
+ a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+ a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+ .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+}
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+.fa-bars
+{
+    position: relative;
+    left: 0 !important;
+    cursor:pointer
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
