@@ -8,21 +8,23 @@ import { ProductsService } from '../products.service';
 })
 export class HomeComponent implements OnInit {
 
-  AllPosts = [];
   AllSlides = [];
 
+  AllPosts = [];
+
   constructor(private _ProductsService:ProductsService) {
-    _ProductsService.getAllPosts().subscribe( (data) => {
-
-     this.AllPosts = data.slice(0,15);
-
-    } )
 
     _ProductsService.getAllPosts().subscribe( (data1) => {
 
       this.AllSlides = data1.slice(0,5);
 
-     } )
+     } )   
+   
+    _ProductsService.getAllPosts().subscribe( (data) => {
+
+     this.AllPosts = data.slice(0,15);
+
+    } )
 
   }
 

@@ -12,8 +12,6 @@ export class ProductComponent implements OnInit {
   AllComments = [];
   ind;
 
-
-
   constructor(_ActivatedRoute:ActivatedRoute,public _ProductsService:ProductsService) {
     this.ind = _ActivatedRoute.snapshot.paramMap.get("id");
 
@@ -23,15 +21,18 @@ export class ProductComponent implements OnInit {
       this.AllComments = da ;
 
      } )
+     this._ProductsService.getOnePost(this.ind).subscribe( (d) => {
+
+      this.productDetails = d;
+
+     } )
+
+
    }
 
   ngOnInit(): void {
 
-    this._ProductsService.getAllPosts().subscribe( (d) => {
 
-      this.productDetails = d[this.ind];
-
-     } )
   }
 
 
